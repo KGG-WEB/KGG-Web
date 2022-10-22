@@ -2,9 +2,21 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>KGG HOME PAGE</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="main_home.css" />
 </head>
+
 <body>
+    <img id="logo" src="${S3.address}">
+    <A id="link" href="https://kart.nexon.com/Main/Index.aspx" target="_blank">공식 홈페이지 바로가기</A>
+    <div id="ent_frame">
+        <div id="select_div">
+            <button id="btn1" onClick="location.href='test'"> <img src="${S3.address}">
+                <br><text id="test">성향 테스트</text></button>
+            <button id="btn2" onClick="location.href='search'"> <img src="${S3.address}">
+                <br><text id="search">전적 검색</text></button>
+        </div>
+    </div>
 </body>
+
 </html>
