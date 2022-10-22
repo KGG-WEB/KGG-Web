@@ -1,0 +1,102 @@
+body{
+    background:rgb(240, 239, 239)
+}
+#main_frame
+{
+    width: 1600px;
+    height: 1000px;
+    margin:auto;
+}
+#most
+{
+    position: relative;
+    width: 400px;
+    height: 800px;
+    left:6%;
+    float:left;
+}
+#emblem
+{
+    position:relative;
+    width:120px;
+    height:120px;
+    box-shadow: 2px 2px 2px rgb(166, 166, 166); 
+    border:2px solid rgb(166, 166, 166);
+    float:left;
+}
+#name
+{
+    position:relative;
+    width:400px;
+    height:120px;
+    top:4%;
+    left:3%;
+}
+#nick
+{
+    font-family: 'Nanum Gothic';
+    font-size:35px;
+    font-weight:bold;
+}
+
+#record
+{
+    position: relative;
+    width: 55%;
+    height: 900px;
+    left:10%;
+    float:left;
+}
+
+#s_home
+{
+    position:relative;
+    width:100%;
+}
+#title
+{
+    font-family: 'Nanum Gothic';
+    font-size:large;
+    font-weight:bold;
+}
+
+
+#IMG
+{
+    width:80px;
+    height:70px;
+}
+#IMG2
+{
+    width:100px;
+    height:60px;
+}
+#IMG2_TEXT
+{
+    position: relative;
+    top:5px;
+}
+#IMG3
+{
+    width:80px;
+    height:60px;
+}
+
+
+#table
+{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    text-align:center;
+    width:100%;
+}
+#table_row
+{
+    background: white;
+
+}
+#text_ranking
+{
+    font-size:x-large;
+    font-weight: bold;
+}
