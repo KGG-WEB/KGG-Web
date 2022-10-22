@@ -1,0 +1,129 @@
+body{
+    background-image:url("metadata/image/home.png");
+    background-repeat: repeat-x;
+}
+#ent_frame{
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+}
+
+.line
+{
+    height: 40px;
+    margin-bottom: 10px;
+    border-bottom:1px solid rgb(223, 220, 220);
+}
+
+.rline
+{
+    height: 30px;
+    margin-bottom: 10px;
+    border-bottom:1px solid rgb(223, 220, 220);
+}
+#link
+{
+    position: relative;
+    top:0.8%;
+    left: 85%;
+    font-size: x-small;
+    font-weight: bold;
+    font-family: "나눔고딕";
+    text-decoration-line: none;
+    color: inherit;
+}
+#notice
+{
+    font-family: "나눔고딕";
+    text-decoration-line: none;
+    color: inherit;
+}
+#logo
+{
+    position: relative;
+    top:1%
+}
+#select_div
+{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    top:5%;
+}
+
+#btn1
+{   
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 50%;
+    left: 30%;
+    padding: 0;
+    border: none;
+    margin:-100px 0px 0px -100px;
+    background: none;
+}
+#btn2
+{    
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 50%;
+    left: 60%;
+    padding: 0;
+    border: none;
+    margin:-100px 0px 0px -100px;
+    background: none;
+}
+#test
+{
+    font-size:x-large;
+    color:rgb(0, 60, 150);
+    font-weight: bold;
+}
+#search
+{
+    font-size:x-large;
+    color:rgb(155, 22, 5);
+    font-weight: bold;
+}
+#main_div
+{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    top:5%;
+}
+#notice_div
+{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    float:left;
+    left:30%;
+    margin:-10px 0px 0px -250px;
+    box-shadow: 1px 1px 1px rgb(209, 207, 207); 
+    background-color: white;
+}
+#ranking_div
+{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    float:left;
+    left:55%;
+    margin:-10px 0px 0px -250px;
+    box-shadow: 1px 1px 1px rgb(209, 207, 207); 
+    background-color: white;
+}
+#table
+{
+    position:relative;
+    vertical-align: middle;
+    width:100%;
+
+}
+#ranktd
+{
+    text-align: center;
+}
