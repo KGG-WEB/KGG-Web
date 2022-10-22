@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>전적 검색</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="search_home.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <div id="main_frame">
+        <img class="box" id="left" src="${S3.address}">
+        <img class="box2" id="right" src="${S3.address}">
+        <div class="search" id="a">
+            <input type="text" id="name" placeholder="카트라이더 닉네임 입력" />
+            <button id="OK"></button>
+        </div>
+    </div>
+</body>
+
+<script>
+    $("#OK").click(function () {  
+        var saveBtn=document.querySelector("#OK");
+        saveBtn.disabled=true;    
+        $.ajax({
+            url: '/api/v1/search',       
+            async: true,            
+            type: 'GET',           
+            data: {
+                test: $("#name").val()  
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data == "200") {
+                    const div_target = document.querySelector('#a');
+                    var obj = document.createElement('img');
+                    obj.id = "loading";
+                    obj.src = "${S3.address}";
+                    div_target.append(obj);
+                    window.location.href = "/search/result";
+                }
+                else {
+                    saveBtn.disabled=false;
+                    swal("ERROR", "존재하지 않는 닉네임입니다.");
+                }
+            }
+        });
+    });
+</script>
+
+</html>
